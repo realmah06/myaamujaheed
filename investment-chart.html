@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agri-Trade Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .chart-container {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <h2>Profit & Loss Chart</h2>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script>
+    // Data (replace with your actual numbers)
+    const labels = ['Deport', 'PZ Shop', 'Kano', 'Birnin Gwari', 'Giwa', 'Lambata'];
+    const profit = [22538, 21000, '16500', 0, 0, 0];
+    const loss = [8000, 0, '0', 7000, 12000, 10000];
+
+    // Chart setup
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'line', // or 'line' for line charts
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Profit ₦',
+            data: profit,
+            backgroundColor: 'darkcyan',
+            width: '2px',
+            fill: false
+
+            
+          },
+          {
+            label: 'loss ₦',
+            data: loss,
+            backgroundColor: 'darkred',
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

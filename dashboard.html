@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="SA Rainbow Portal" />
+<meta name="keywords" content="registration, welcome back, swapping" />
+<!-- Page Title -->
+<title>A.A Mujaheed | Dashboard</title></title>
+<!-- Favicon and Touch Icons -->
+<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Pe-icon-7-stroke/1.2.0/css/pe-icon-7-stroke.min.css">
+<!-- Stylesheet-->
+<link href="http://haqqygenesis.com.ng/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="http://haqqygenesis.com.ng/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="http://haqqygenesis.com.ng/css/animate.css" rel="stylesheet" type="text/css">
+<link href="http://haqqygenesis.com.ng/css/css-plugin-collections.css" rel="stylesheet"/>
+<!-- CSS | menuzord megamenu skins -->
+<link id="menuzord-menu-skins" href="http://haqqygenesis.com.ng/css/menuzord-skins/menuzord-rounded-boxed.css" rel="stylesheet"/>
+<!-- CSS | Main style file -->
+<link href="http://haqqygenesis.com.ng/css/style-main.css" rel="stylesheet" type="text/css">
+<!-- CSS | Preloader Styles -->
+<link href="http://haqqygenesis.com.ng/css/preloader.css" rel="stylesheet" type="text/css">
+<!-- CSS | Custom Margin Padding Collection -->
+<link href="http://haqqygenesis.com.ng/css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+<!-- CSS | Responsive media queries -->
+<link href="http://haqqygenesis.com.ng/css/responsive.css" rel="stylesheet" type="text/css">
+<link href="http://haqqygenesis.com.ng/css/sweetalert.min.css" rel="stylesheet" type="text/css">
+<!-- CSS | Theme Color -->
+<link href="http://haqqygenesis.com.ng/css/colors/theme-skin-color-set-1.css" rel="stylesheet" type="text/css">
+<link href="http://haqqygenesis.com.ng/css/bootstrap-select.css" rel="stylesheet" type="text/css"/>
+<style>
+  .panel-title{
+    background-color: #10569A;
+    padding: 10px 15px;
+    margin: 1px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body class="">
+<div id="wrapper" class="clearfix mb-12">
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="spinner">
+      <img alt="" src="images/preloaders/5.gif">
+    </div>
+    <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+  </div>
+  	     <input type="hidden" id="role_id" value="">
+    <header id="header" class="header" >
+    <div class="header-nav">
+      <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+        <div class="container">
+          <nav id="menuzord-right" class="menuzord default">
+            <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
+              <img src="images/logo.jpg" alt="" id="display_balance">
+            </a>
+            <ul class="menuzord-menu">
+              <li class="active"><a href="dashboard.html"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Dashboard</a></li>
+              <li class="invoice"> 
+                 	<a href="balance.html"> <i class="fa fa-balance-scale" aria-hidden="true"></i>&nbsp;</i>Balances</a>
+                                </li>
+                  <li class="delivery"> <a   href="investment.html"  ><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;</i>Investment</a></li>
+                  <li class="delivery"> <a   href="account.html"  ><i class="fa fa-university" aria-hidden="true"></i>&nbsp;</i>Account</a></li>
+                  <li class="delivery"> <a   href="supply.html"  ><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;</i>Supply</a></li>
+                  <li class="delivery"> <a   href="delivery.html"  ><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;</i>Delivery</a></li>
+                  <li class="delivery"> <a   href="diary.html"  ><i class="fa fa-book" aria-hidden="true"></i>&nbsp;</i>Diary</a></li>
+                    <li class="invoice"> <a   href="details.html"  >&nbsp;</i>Confirmed</a></li>
+              <li class="report" ><a href="report.html"><i class="fa fa-cloud" aria-hidden="true"></i> &nbsp;Report</a>
+              </li>
+              <li><a href="logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; Logout</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+    <!-- Divider: Funfact -->
+   <div class="divider parallax layer-overlay" data-bg-img="http://haqqygenesis.com.ng/images/bg6.jpg" data-parallax-ratio="0.7">
+      <div class="container pt-70 pb-60">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-car" aria-hidden="true" style="color: #eee;"></i>
+              <h2 data-animation-duration="2000" data-value="0" class="animate-number text-white mt-0 font-38 font-weight-500"></h2>
+              <h4 class="text-white text-uppercase"> Turn-Over</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-shopping-cart" aria-hidden="true" style="color: #fff;"></i>
+              <h2 data-animation-duration="2000" data-value="0" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+              <h4 class="text-white text-uppercase">Total Supplied</h4>
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-cube" aria-hidden="true" style="color: #fff;"></i>
+              <h2 data-animation-duration="2000" data-value="0" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+              <h4 class="text-white text-uppercase">Sales & Delivery</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+          <i class="fa fa-retweet" aria-hidden="true" style="color: #fff;"></i>
+              <h2 data-animation-duration="2000" data-value="0" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+              <h4 class="text-white text-uppercase">Pending Sales & Delivery</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="container-fluid mt-12 ">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="border-1px p-30 mb-0" style="border: thin  green solid;">
+              <h3 class="text-theme-colored mt-0 pt-5"><i class="fa fa-dashboard"></i> Dashboard</h3>
+              <hr style="border: thin  green solid;"> 
+
+				<div id="myTab2" class="tab-content">
+   <!-- DASHBOARD -->
+          <div id="dashboard" class="tab-pane fade in active">
+              
+  <div class="panel">
+   <div class="panel-title" > <a data-parent="#accordion" data-toggle="collapse" href="#accordion1" class="" aria-expanded="true"> <span class="open-sub">BANK TRANSACTIONS waiting Confirmation</span></a> </div>
+    <div id="accordion1" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+    
+      <div class="panel-content" >
+             <form name="formSelectAll" id="formSelectAll" method="POST"  action="confirmedAll.php">
+          <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-12">
+            <h2  align="center">0 Bank Account Transactions waiting Confirmation </h2> 
+            <hr class="border:solid green thin">
+           
+                   <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-6">
+          
+      
+           
+                                        <div class="form-group-lg col-md-8">
+                             <label for="bank_mode">Action:<span class="text-danger">*</span></label>
+                                <select class="form-control selectpicker" data-live-search="true" id="bank_mode" name="bank_mode" style="width: 300px;outline: none;" >
+                               <option value="" selected>--Select Action--</option>
+                                
+                               <option value="Cash to Bank Deposit">Confirm Transactions</option>
+                                <option value="Payment to Investor">Discard Transactions</option>
+                                 <option value="Payment to Investor">Report Transactions</option>
+                                </select>
+                                        </div>
+         
+
+        
+        </div>
+         <div class="col-md-5">
+             <button type="submit" name="bank_confirm_mark" id="bank_confirm_mark" class="btn btn-primary btn-lg btn-block">Confirm Mark Ones</button>
+              </div>
+              <div class="col-md-1" >
+                   <input type="checkbox" name="bank_select_all" id="bank_select_all"><strong> Select All<br><span class="count_checked text-danger"></span> Marked</strong>
+                   </div>
+                    </div>
+                    <div class="panel-body" style=" overflow:scroll; height:300px;" >
+                       
+    <table border="1"  cellpadding="0" cellspacing="0" align="center"  class=" table table-hover table-responsive " id="banking">
+			 
+  <thead>
+      
+		  <tr>
+		      	
+					<td align="center"><strong>SNo</strong></td>
+					<td align="center"><strong>Date</strong></td>
+				<td align="center"><strong>ID</strong></td>
+                   <td align="center"><strong>Employee</strong></td>
+                     <td align="center"><strong>Category</strong></td>
+					
+                    <td align="center"><strong>Description</strong></td>
+					
+                    <td align="center"><strong>Amount</strong></td>
+                    	<td align="center"><strong>Mark</strong></td>
+				
+			  </tr>
+			</thead>
+					 <tbody >
+					    
+                           <tr> 
+                          	   <td align="center" colspan="7"><h2 align="center" class="text-primary ">No More Bank Transaction at this Moment !</h2></td>  
+                              
+                          </tr><tr>
+							<td align="center"  colspan="7">&nbsp;</td>
+					  </tr>
+					                   
+</tbody>
+					  </table>
+					  
+      </div>
+      
+         </div>
+         
+         </div>
+         </form>
+               </div>
+      
+    </div>
+  </div>
+    <div class="panel">
+   <div class="panel-title" > <a data-parent="#accordion" data-toggle="collapse" href="#accordion2" class="" aria-expanded="true"> <span class="open-sub">CREDIT  & DEBIT NOTE waiting Confirmation</span></a> </div>
+    <div id="accordion2" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+    
+      <div class="panel-content" >
+             <form name="formSelectAll" id="formSelectAll" method="POST"  action="confirmedAll.php">
+          <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-12">
+            <h2  align="center">0 Credit & Debit Note waiting Confirmation </h2> 
+            <hr class="border:solid green thin">
+           
+                   <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-6">
+          
+      
+           
+                                        <div class="form-group-lg col-md-8">
+                             <label for="bank_mode">Action:<span class="text-danger">*</span></label>
+                                <select class="form-control selectpicker" data-live-search="true" id="bank_mode" name="bank_mode" style="width: 300px;outline: none;" >
+                               <option value="" selected>--Select Action--</option>
+                                
+                               <option value="Cash to Bank Deposit">Confirm Transactions</option>
+                                <option value="Payment to Investor">Discard Transactions</option>
+                                <option value="Payment to Investor">Report Transactions</option>
+                                </select>
+                                        </div>
+         
+
+        
+        </div>
+         <div class="col-md-5">
+             <button type="submit" name="bank_confirm_mark" id="bank_confirm_mark" class="btn btn-primary btn-lg btn-block">Confirm Mark Ones</button>
+              </div>
+              <div class="col-md-1" >
+                   <input type="checkbox" name="bank_select_all" id="bank_select_all"><strong> Select All<br><span class="count_checked text-danger"></span> Marked</strong>
+                   </div>
+                    </div>
+                    <div class="panel-body" style=" overflow:scroll; height:300px;" >
+                       
+    <table border="1"  cellpadding="0" cellspacing="0" align="center"  class=" table table-hover table-responsive " id="banking">
+			 
+  <thead>
+      
+		  <tr>
+		      	
+					<td align="center"><strong>SNo</strong></td>
+					<td align="center"><strong>Date</strong></td>
+				<td align="center"><strong>ID</strong></td>
+                   <td align="center"><strong>Employee</strong></td>
+                     <td align="center"><strong>Category</strong></td>
+					
+                    <td align="center"><strong>Reason</strong></td>
+                          <td align="center"><strong>Chart</strong></td>
+					
+                    <td align="center"><strong>Amount</strong></td>
+                    	<td align="center"><strong>Mark</strong></td>
+				
+			  </tr>
+			</thead>
+					 <tbody >
+					    
+                           <tr> 
+                          	   <td align="center" colspan="8"><h2 align="center" class="text-primary ">No More Credit or Debit Note  at this Moment !</h2></td>  
+                              
+                          </tr><tr>
+							<td align="center"  colspan="8">&nbsp;</td>
+					  </tr>
+					                   
+</tbody>
+					  </table>
+					  
+      </div>
+      
+         </div>
+         
+         </div>
+         </form>
+               </div>
+      
+    </div>
+  </div>
+    <div class="panel">
+   <div class="panel-title" > <a data-parent="#accordion" data-toggle="collapse" href="#accordion3" class="" aria-expanded="true"> <span class="open-sub">VENDOR TRUCKS   waiting Confirmation</span></a> </div>
+    <div id="accordion3" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+    
+      <div class="panel-content" >
+             <form name="formSelectAll" id="formSelectAll" method="POST"  action="confirmedAll.php">
+          <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-12">
+            <h2  align="center">0 Vendor Trucks waiting Confirmation </h2> 
+            <hr class="border:solid green thin">
+           
+                   <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-6">
+          
+      
+           
+                                        <div class="form-group-lg col-md-8">
+                             <label for="bank_mode">Action:<span class="text-danger">*</span></label>
+                                <select class="form-control selectpicker" data-live-search="true" id="bank_mode" name="bank_mode" style="width: 300px;outline: none;" >
+                               <option value="" selected>--Select Action--</option>
+                                
+                               <option value="Cash to Bank Deposit">Confirm Truck</option>
+                                <option value="Payment to Investor">Discard Truck</option>
+                                <option value="Payment to Investor">Report Truck</option>
+                                 <option value="Payment to Investor">View Truck</option>
+                                </select>
+                                        </div>
+         
+
+        
+        </div>
+         <div class="col-md-5">
+             <button type="submit" name="bank_confirm_mark" id="bank_confirm_mark" class="btn btn-primary btn-lg btn-block">Confirm Mark Ones</button>
+              </div>
+              <div class="col-md-1" >
+                   <input type="checkbox" name="bank_select_all" id="bank_select_all"><strong> Select All<br><span class="count_checked text-danger"></span> Marked</strong>
+                   </div>
+                    </div>
+                    <div class="panel-body" style=" overflow:scroll; height:300px;" >
+                       
+    <table border="1"  cellpadding="0" cellspacing="0" align="center"  class=" table table-hover table-responsive " id="banking">
+			 
+  <thead>
+      
+		  <tr>
+		      	
+					<td align="center"><strong>SNo</strong></td>
+					<td align="center"><strong>Date</strong></td>
+				<td align="center"><strong>ID</strong></td>
+                   <td align="center"><strong>Employee</strong></td>
+                     <td align="center"><strong>Vendor</strong></td>
+					          
+                    <td align="center"><strong>Product</strong></td>
+                          <td align="center"><strong>DO No</strong></td>
+					
+                    <td align="center"><strong>Cost Price</strong></td>
+                    <td align="center"><strong>Qty</strong></td>
+                    <td align="center"><strong>Truck No</strong></td>
+                    <td align="center"><strong>Dr Number</strong></td>
+                    <td align="center"><strong>T.P Amount</strong></td>
+                    <td align="center"><strong>Ship From</strong></td>
+                    <td align="center"><strong>To</strong></td>
+                    <td align="center"><strong>Total</strong></td>
+                    	<td align="center"><strong>Mark</strong></td>
+				
+			  </tr>
+			</thead>
+					 <tbody >
+					    
+                           <tr> 
+                          	   <td align="center" colspan="15"><h2 align="center" class="text-primary ">No More Vendor Trucks at this Moment !</h2></td>  
+                              
+                          </tr><tr>
+							<td align="center"  colspan="15">&nbsp;</td>
+					  </tr>
+					                   
+</tbody>
+					  </table>
+					  
+      </div>
+      
+         </div>
+         
+         </div>
+         </form>
+               </div>
+      
+    </div>
+  </div>
+  <div class="panel">
+   <div class="panel-title" > <a data-parent="#accordion" data-toggle="collapse" href="#accordion4" class="" aria-expanded="true"> <span class="open-sub">AGENT TRUCKS   waiting Confirmation</span></a> </div>
+    <div id="accordion4" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+    
+      <div class="panel-content" >
+             <form name="formSelectAll" id="formSelectAll" method="POST"  action="confirmedAll.php">
+          <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-12">
+            <h2  align="center">0 Agent Trucks waiting Confirmation </h2> 
+            <hr class="border:solid green thin">
+           
+                   <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-6">
+          
+      
+           
+                                        <div class="form-group-lg col-md-8">
+                             <label for="bank_mode">Action:<span class="text-danger">*</span></label>
+                                <select class="form-control selectpicker" data-live-search="true" id="bank_mode" name="bank_mode" style="width: 300px;outline: none;" >
+                               <option value="" selected>--Select Action--</option>
+                                
+                               <option value="Cash to Bank Deposit">Confirm Truck</option>
+                                <option value="Payment to Investor">Discard Truck</option>
+                                <option value="Payment to Investor">Report Truck</option>
+                                 <option value="Payment to Investor">View Truck</option>
+                                </select>
+                                        </div>
+         
+
+        
+        </div>
+         <div class="col-md-5">
+             <button type="submit" name="bank_confirm_mark" id="bank_confirm_mark" class="btn btn-primary btn-lg btn-block">Confirm Mark Ones</button>
+              </div>
+              <div class="col-md-1" >
+                   <input type="checkbox" name="bank_select_all" id="bank_select_all"><strong> Select All<br><span class="count_checked text-danger"></span> Marked</strong>
+                   </div>
+                    </div>
+                    <div class="panel-body" style=" overflow:scroll; height:300px;" >
+                       
+    <table border="1"  cellpadding="0" cellspacing="0" align="center"  class=" table table-hover table-responsive " id="banking">
+			 
+  <thead>
+      
+		  <tr>
+		      	
+					<td align="center"><strong>SNo</strong></td>
+					<td align="center"><strong>Date</strong></td>
+				<td align="center"><strong>ID</strong></td>
+                   <td align="center"><strong>Employee</strong></td>
+                     <td align="center"><strong>Agent</strong></td>
+					          
+                    <td align="center"><strong>Product</strong></td>
+                          <td align="center"><strong>Type</strong></td>
+					
+                    <td align="center"><strong> Price</strong></td>
+                    <td align="center"><strong>Qty/Kg</strong></td>
+                    <td align="center"><strong>Truck No</strong></td>
+                    <td align="center"><strong>Dr Number</strong></td>
+                    <td align="center"><strong>T.P Amount</strong></td>
+                    <td align="center"><strong>Ship From</strong></td>
+                    <td align="center"><strong>To</strong></td>
+                    <td align="center"><strong>Total</strong></td>
+                    	<td align="center"><strong>Mark</strong></td>
+				
+			  </tr>
+			</thead>
+					 <tbody >
+					    
+                           <tr> 
+                          	   <td align="center" colspan="15"><h2 align="center" class="text-primary ">No More Agent Trucks at this Moment !</h2></td>  
+                              
+                          </tr><tr>
+							<td align="center"  colspan="15">&nbsp;</td>
+					  </tr>
+					                   
+</tbody>
+					  </table>
+					  
+      </div>
+      
+         </div>
+         
+         </div>
+         </form>
+               </div>
+      
+    </div>
+  </div>
+  <div class="panel">
+   <div class="panel-title" > <a data-parent="#accordion" data-toggle="collapse" href="#accordion5" class="" aria-expanded="true"> <span class="open-sub">TRANSIT   waiting Confirmation</span></a> </div>
+    <div id="accordion5" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+    
+      <div class="panel-content" >
+             <form name="formSelectAll" id="formSelectAll" method="POST"  action="confirmedAll.php">
+          <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-12">
+            <h2  align="center">0  Transit waiting Confirmation </h2> 
+            <hr class="border:solid green thin">
+           
+                   <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-6">
+          
+      
+           
+                                        <div class="form-group-lg col-md-8">
+                             <label for="bank_mode">Action:<span class="text-danger">*</span></label>
+                                <select class="form-control selectpicker" data-live-search="true" id="bank_mode" name="bank_mode" style="width: 300px;outline: none;" >
+                               <option value="" selected>--Select Action--</option>
+                                
+                               <option value="Cash to Bank Deposit">Confirm Transit</option>
+                                <option value="Payment to Investor">Discard Transit</option>
+                                <option value="Payment to Investor">Report Transit</option>
+                                 <option value="Payment to Investor">View Transit</option>
+                                </select>
+                                        </div>
+         
+
+        
+        </div>
+         <div class="col-md-5">
+             <button type="submit" name="bank_confirm_mark" id="bank_confirm_mark" class="btn btn-primary btn-lg btn-block">Confirm Mark Ones</button>
+              </div>
+              <div class="col-md-1" >
+                   <input type="checkbox" name="bank_select_all" id="bank_select_all"><strong> Select All<br><span class="count_checked text-danger"></span> Marked</strong>
+                   </div>
+                    </div>
+                    <div class="panel-body" style=" overflow:scroll; height:300px;" >
+                       
+    <table border="1"  cellpadding="0" cellspacing="0" align="center"  class=" table table-hover table-responsive " id="banking">
+			 
+  <thead>
+      
+		  <tr>
+		      	
+					<td align="center"><strong>SNo</strong></td>
+					<td align="center"><strong>Date</strong></td>
+				<td align="center"><strong>ID</strong></td>
+                   <td align="center"><strong>Employee</strong></td>
+                     <td align="center"><strong>Transit Type</strong></td>
+					          
+                    <td align="center"><strong>Product</strong></td>
+                          <td align="center"><strong>Supplier Type</strong></td>
+					
+                    <td align="center"><strong>C-Price</strong></td>
+                       <td align="center"><strong>Purchasers/Customer</strong></td>
+                    <td align="center"><strong>Qty/Kg</strong></td>
+
+                    <td align="center"><strong>Ship From</strong></td>
+                    <td align="center"><strong>To</strong></td>
+                    <td align="center"><strong>Profit/Loss Amount</strong></td>
+                    	<td align="center"><strong>Mark</strong></td>
+				
+			  </tr>
+			</thead>
+					 <tbody >
+					    
+                           <tr> 
+                          	   <td align="center" colspan="13"><h2 align="center" class="text-primary ">No More Profit or Loss  at this Moment !</h2></td>  
+                              
+                          </tr><tr>
+							<td align="center"  colspan="13">&nbsp;</td>
+					  </tr>
+					                   
+</tbody>
+					  </table>
+					  
+      </div>
+      
+         </div>
+         
+         </div>
+         </form>
+               </div>
+      
+    </div>
+  </div>
+   </div>  
+   </div>  
+</div>
+</div>
+</div>  
+  </div>     
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+       </div>   
+<!-- end wrapper -->
+<footer id="footer" class="footer text-white mt-20" style="background-color:#2d2d2d;">
+    <div class="container p-20">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">		
+			<div >
+			 &copy;aa_mujaheed_group 2025..
+				2025				 <span><embed>Powered by:</embed><a href="#">Mahadi Abubakar</a></span>   
+			</div>
+		
+</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- external javascripts -->
+<script src="http://haqqygenesis.com.ng/js/jquery-2.2.4.min.js"></script>
+<script src="http://haqqygenesis.com.ng/js/jquery-ui.min.js"></script>
+<script src="http://haqqygenesis.com.ng/js/bootstrap.min.js"></script>
+<script src="http://haqqygenesis.com.ng/js/bootstrap-select.js"></script>
+<script src="http://haqqygenesis.com.ng/js/sweetalert.min.js" ></script>
+<!-- JS | jquery plugin collection for this theme -->
+<script src="http://haqqygenesis.com.ng/js/jquery-plugin-collection.js"></script>
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="http://haqqygenesis.com.ng/js/custom.js"></script>
+<script type="text/javascript">
+</body>
+</html>
