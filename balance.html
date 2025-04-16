@@ -4601,7 +4601,18 @@
     </div>
   </div>
 </div>
-
+<script>
+ var shown = document.getElementById('unhidden_report');
+ var content = document.getElementById('hidden_report');
+ 
+ shown.ondblclick = function(){
+   content.style.display = 'block';
+ };
+ shown.onclick = function(){
+   content.style.display = 'none';
+ };
+  
+</script>
 <script type="text/javascript">
 
 $("#note_investor_row").hide();
