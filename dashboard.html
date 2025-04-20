@@ -481,7 +481,7 @@
     </div>
   </div>
   <div class="panel">
-   <div class="panel-title" > <a data-parent="#accordion" data-toggle="collapse" href="#accordion5" class="" aria-expanded="true"> <span class="open-sub">BRANCH & PARTNER  TRANSIT   waiting Confirmation</span></a> </div>
+   <div class="panel-title" > <a data-parent="#accordion" data-toggle="collapse" href="#accordion5" class="" aria-expanded="true"> <span class="open-sub">BRANCH  TRANSIT   waiting Confirmation</span></a> </div>
     <div id="accordion5" class="panel-collapse collapse" role="tablist" aria-expanded="true">
     
       <div class="panel-content" >
@@ -489,7 +489,7 @@
           <div class="row" role="admin_account_note">          
                 
            <div class="col-md-12">
-            <h2  align="center">0  Transit waiting Confirmation </h2> 
+            <h2  align="center">0 Branch  Transit waiting Confirmation </h2> 
             <hr class="border:solid green thin">
            
                    <div class="row" role="admin_account_note">          
@@ -532,18 +532,16 @@
 					<td align="center"><strong>Date</strong></td>
 				<td align="center"><strong>ID</strong></td>
                    <td align="center"><strong>Employee</strong></td>
-                     <td align="center"><strong>Transit Type</strong></td>
+                     <td align="center"><strong>Source Branch</strong></td>
 					          
-                    <td align="center"><strong>Product</strong></td>
-                          <td align="center"><strong>Supplier Type</strong></td>
+                    <td align="center"><strong>Target Branch</strong></td>
+                          <td align="center"><strong>Product</strong></td>
 					
-                    <td align="center"><strong>C-Price</strong></td>
-                       <td align="center"><strong>Purchasers/Customer</strong></td>
-                    <td align="center"><strong>Qty/Kg</strong></td>
+                    <td align="center"><strong>Qty</strong></td>
+                       <td align="center"><strong>T.P Amount</strong></td>
+                    <td align="center"><strong>Logistics</strong></td>
 
-                    <td align="center"><strong>Ship From</strong></td>
-                    <td align="center"><strong>To</strong></td>
-                    <td align="center"><strong>Profit/Loss Amount</strong></td>
+                    
                     	<td align="center"><strong>Mark</strong></td>
 				
 			  </tr>
@@ -551,10 +549,102 @@
 					 <tbody >
 					    
                            <tr> 
-                          	   <td align="center" colspan="13"><h2 align="center" class="text-primary ">No More Profit or Loss  at this Moment !</h2></td>  
+                          	   <td align="center" colspan="10"><h2 align="center" class="text-primary ">No More Branch Transit  at this Moment !</h2></td>  
                               
                           </tr><tr>
-							<td align="center"  colspan="13">&nbsp;</td>
+							<td align="center"  colspan="10">&nbsp;</td>
+					  </tr>
+					                   
+</tbody>
+					  </table>
+					  
+      </div>
+      
+         </div>
+         
+         </div>
+         </form>
+               </div>
+      
+    </div>
+  </div>
+  
+  
+    <div class="panel">
+   <div class="panel-title" > <a data-parent="#accordion" data-toggle="collapse" href="#accordion5" class="" aria-expanded="true"> <span class="open-sub">PARTNER  TRANSIT   waiting Confirmation</span></a> </div>
+    <div id="accordion5" class="panel-collapse collapse" role="tablist" aria-expanded="true">
+    
+      <div class="panel-content" >
+             <form name="formSelectAll" id="formSelectAll" method="POST"  action="confirmedAll.php">
+          <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-12">
+            <h2  align="center">0 Partner  Transit waiting Confirmation </h2> 
+            <hr class="border:solid green thin">
+           
+                   <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-6">
+          
+      
+           
+                                        <div class="form-group-lg col-md-8">
+                             <label for="bank_mode">Action:<span class="text-danger">*</span></label>
+                                <select class="form-control selectpicker" data-live-search="true" id="bank_mode" name="bank_mode" style="width: 300px;outline: none;" >
+                               <option value="" selected>--Select Action--</option>
+                                
+                               <option value="Cash to Bank Deposit">Confirm Transit</option>
+                                <option value="Payment to Investor">Discard Transit</option>
+                                <option value="Payment to Investor">Report Transit</option>
+                                 <option value="Payment to Investor">View Transit</option>
+                                </select>
+                                        </div>
+         
+
+        
+        </div>
+         <div class="col-md-5">
+             <button type="submit" name="bank_confirm_mark" id="bank_confirm_mark" class="btn btn-primary btn-lg btn-block">Confirm Mark Ones</button>
+              </div>
+              <div class="col-md-1" >
+                   <input type="checkbox" name="bank_select_all" id="bank_select_all"><strong> Select All<br><span class="count_checked text-danger"></span> Marked</strong>
+                   </div>
+                    </div>
+                    <div class="panel-body" style=" overflow:scroll; height:300px;" >
+                       
+    <table border="1"  cellpadding="0" cellspacing="0" align="center"  class=" table table-hover table-responsive " id="banking">
+			 
+  <thead>
+      
+		  <tr>
+		      	
+					<td align="center"><strong>SNo</strong></td>
+					<td align="center"><strong>Date</strong></td>
+				<td align="center"><strong>ID</strong></td>
+                   <td align="center"><strong>Employee</strong></td>
+                     <td align="center"><strong>Partner</strong></td>
+					          
+                    <td align="center"><strong>Product</strong></td>
+                          <td align="center"><strong>Qty/Kg</strong></td>
+					
+                    <td align="center"><strong>C-Price</strong></td>
+                       <td align="center"><strong>Purchaser</strong></td>
+                    <td align="center"><strong>Net Weight</strong></td>
+                     <td align="center"><strong>P-Price</strong></td>
+                     <td align="center"><strong>Profit/Loss</strong></td>
+
+                    
+                    	<td align="center"><strong>Mark</strong></td>
+				
+			  </tr>
+			</thead>
+					 <tbody >
+					    
+                           <tr> 
+                          	   <td align="center" colspan="12"><h2 align="center" class="text-primary ">No More Partner Transit  at this Moment !</h2></td>  
+                              
+                          </tr><tr>
+							<td align="center"  colspan="12">&nbsp;</td>
 					  </tr>
 					                   
 </tbody>
