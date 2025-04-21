@@ -194,6 +194,7 @@
 
   <ul class="nav nav-tabs nav-justified nav-pills " >
     <li class="active"><a data-toggle="tab" href="#dashboard" ><i class="fa fa-folder-open" aria-hidden="true"></i> Notes</a></li>
+	   <li><a data-toggle="tab" href="#comfirmed" ><i class="fa fa-square-o" aria-hidden="true"></i>Confirmed Notes</a></li>
       <li><a  href="#" onclick="javascript:location.reload();"><i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;</i>Refresh</a></li> 
   </ul>
 </ul> 
@@ -279,6 +280,81 @@
                    </div>   
        </div>
    </div>
+
+	<div id="confirmed" class="tab-pane fade in active">
+
+         <!-- CONFIRM ACCOUNT-->
+         <div class="row" >  
+           <div class="col-md-12">
+               
+      <div class="panel-content" >
+             <form name="formSelectBank" id="formSelectBank" method="POST"  action="confirmedBank.php">
+          <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-12">
+            <h2  align="center">Confirmed Diary Note </h2> 
+            <hr class="border:solid green thin">
+           
+                   <div class="row" role="admin_account_note">          
+                
+           <div class="col-md-6">
+          
+       <div class="input-group">
+           
+          <input type="text" id="BankInput" class="form-control input-sm" placeholder="Search..."  >
+         
+            <span class="input-group-addon">
+            <i class="fa  fa-search-plus">&nbsp;</i></span>
+        </div> 
+        </div>
+                    </div>
+                    <div class="panel-body" style=" overflow:scroll; height:300px;" >
+                       
+    <table border="1"  cellpadding="0" cellspacing="0" align="center"  class=" table table-hover table-responsive " id="BankAccount">
+		
+  <thead>
+      
+		  <tr>
+		      	
+					<td align="center"><strong>SNo</strong></td>
+					<td align="center"><strong>Date</strong></td>
+				
+                   <td align="center"><strong>Employee</strong></td>
+					
+                    <td align="center"><strong>Note Title</strong></td>
+                        <td align="center"><strong>Note Details</strong></td>
+					
+                    <td align="center"><strong>Amount</strong></td>
+                    	
+					<td align="center" ><strong>Admin</strong></td>
+                   <!-- <td align="center" ><strong>Confirm</strong></td>-->
+				
+			  </tr>
+			</thead>
+					 <tbody >
+					    
+                          
+		 
+<tr>
+							<td align="right"  colspan="6">&nbsp;</td>
+							
+					  </tr>
+					                  
+</tbody>
+					  </table>
+					  
+      </div>
+      
+         </div>
+         
+         </div>
+     </form>  
+               </div>
+      
+                   </div>   
+       </div>
+   </div>
+	
    </div>  
 <!-- end wrapper -->
 <footer id="footer" class="footer text-white mt-20" style="background-color:#2d2d2d;">
