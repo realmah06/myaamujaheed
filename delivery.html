@@ -172,7 +172,7 @@
 
   <ul class="nav nav-tabs nav-justified nav-pills " >
     <li class="active"><a data-toggle="tab" href="#dashboard" ><i class=" fa fa-calculator"></i> Balances</a></li>
-
+ <li><a data-toggle="tab" href="#trucks" ><i class="fa fa-check-square-o" aria-hidden="true"></i> Confirmed Trucks</a></li>
 
   
   
@@ -328,6 +328,78 @@
        </div>
                     </div>
   </div>
+
+	 <div id="trucks" class="tab-pane fade in">
+		 <div class="row" role="admin_delivery_delivery">   
+            <div class="col-md-12">
+				<div class="panel panel-default">
+                    <div class="panel-heading clearfix" style="background-color: #52A3A3; font-weight:bold; color:white">
+                
+      <div class="panel-title">
+      <i class="fa fa-truck">&nbsp;</i>Confirmed Delivery Trucks 
+        <div class="pull-right" >              
+      <div class="input-group">
+          <input type="text" id="DeliveryInput" class="form-control input-sm" placeholder="Search Delivery..."  >
+         
+            <span class="input-group-addon">
+            <i class="fa  fa-search-plus">&nbsp;</i></span>
+        </div> 
+              </div></div>
+    </div>
+                   	<div class="panel-body " style=" overflow:scroll; height:300px; font-size:16px;">
+        
+
+                 
+                <table class=" table table-responsive table-hover" border="1" id="delivery2">  
+                           
+						  <thead >
+                             <tr > 
+                     <td align="center"><strong>SNo</strong></td>
+					<td align="center"><strong>Supply Date</strong></td>
+                    <td align="center"><strong>Supplier Type</strong></td>
+					<td align="center"><strong>Supplied by</strong></td>
+					<td align="center"><strong>Supplied to</strong></td>
+                     <td align="center"><strong>Delivered to</strong></td>
+					
+					<td align="center"><strong>Product</strong></td>
+                    <td align="center"><strong>Bags</strong></td>
+                     <td align="center"><strong>Amount</strong></td>
+                    
+                  
+                
+                    <td align="center" colspan="3" ><strong>Action</strong>
+					
+                </tr>
+                          
+						  </thead>
+                         <tbody  >
+                          
+							 <tr> 
+                          	   <td align="center" colspan="15"><h2 align="center" class="text-success ">No More Delivery at this Moment !</h2></td>  
+
+                              
+                          </tr>                 <tr> 
+                          	   <td align="center" colspan="16">&nbsp;</td>  
+                              
+                          </tr> 
+                          
+                          </tbody>
+                </table>
+
+      
+      
+   				 </div>
+  
+ 
+                
+                   
+              
+            </div>            
+ 			 </div>
+             
+             
+           	</div>
+	 </div>
    </div>
      </div> 
    </div>
